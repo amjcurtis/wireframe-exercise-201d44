@@ -1,0 +1,98 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* ------------------------------------ */
+/* HEADER */
+
+header {
+    background: #444;
+    height: 100px;
+
+}
+
+nav {
+    width: 960px;
+    margin: 0px auto;
+}
+
+nav img {
+    float: left;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+nav /*ul*/ li { /* Could include ul btwn nav and li to make it more exact/specific; but since there's only one list in nav we don't really need it */
+    display: inline-block; /*Better'n inline simply*/
+    margin: 40px;
+    margin-right: 90px;
+    list-style: none;
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+}
+
+/* ----------------------------------- */
+/* MAIN */
+
+main {
+    width: 960px;
+    margin: 30px; /* vs. 0px auto */
+}
+
+main ul li {
+    display: inline-block; /* Or float left and address margins afterward; this is older way of allowing you to squeeze the li's from side-by-side to stacked top-to-bottom based on window width*/
+    margin: 30px 30px 30px 0px;
+    list-style: none;
+}
+
+main li:last-child { /* ':last-child' is a pseudo-class */
+    margin-right: 0px; /* 0px here corresponds to the 0px left margin in main li ul selector above */
+    
+}
+
+section img {
+    float: right;
+    margin-left: 30px;
+}
+
+section div {
+    width: calc(50% - 30px);
+    padding: 10px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+section p {
+    font-style: italic; /* vs. using <em> element in the HTML */
+    line-height: 20px; /* Always specify line height */
+    height: 315px; /* Constraint p text to within height of container */
+    overflow: auto; /* Or 'scroll' value */
+    margin-bottom: 20px;
+}
+
+button { /* width of button determ'd by content plus padding */
+    border: none;
+    padding: 10px 30px;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 350ms; /* 350ms is conventional time for UI transitions in UI/UX community */
+    cursor: pointer;
+}
+
+button:hover {
+    background: green;
+}
+
+footer {
+    clear: both; /* What's this do again?? */
+    background: #000;
+    height: 100px;
+}
