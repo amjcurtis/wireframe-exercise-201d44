@@ -43,7 +43,7 @@ main {
 }
 
 main ul li {
-    display: inline-block; /* Or float left and address margins afterward; this is older way of allowing you to squeeze the li's from side-by-side to stacked top-to-bottom based on window width*/
+    display: inline-block; /* Or float left and address margins afterward; this is older way of allowing you to dynamically squeeze the li's from side-by-side to stacked top-to-bottom based on window width*/
     margin: 30px 30px 30px 0px;
     list-style: none;
 }
